@@ -19,48 +19,78 @@
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Welcome to my PORTFOLIO!!!</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Skills</a>
-                    <a class="nav-link" href="#">Certificates</a>
-                    <a class="nav-link" href="#">Resume</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<script>
+    var myVar;
 
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
 
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+</script>
 
-    <div class="container px-4 bg-light">
-        <div class="row gx-5 m-4">
-            <div class="col p-3">
-                <img src="photos/002.jpg" class="rounded-circle shadow-lg p-3 mb-5 bg-body" alt="my_image">
-            </div>
-            <div class="col p-3">
-                <h2>Introduction...</h2>
-                <p class="lead "><br>
-                    Hello everyone, I am a Btech 4th-year student who is a self-motivated, strategic, and hardworking
-                    student. I am a fast learner who is always excited to learn new things and to gain exposure to
-                    diverse cultures for developing new professional relationships and responsibilities. I have
-                    experience in front-end web development and have worked for some organizations such as ICAR-CIRC and
-                    have some experience in the field of IOT.
-                    I have good management skills with leadership quality
-                    My interest areas to explore are data science and web development.
-                </p>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader">
+        <div class="d-flex justify-content-center">
+            <div>
+                <h1 style="color: white;">SHIVAM SEMWAL</h1>
+                <p>python developer | web developer</p>
+                <br><br>
+                <p>WELCOME TO MY PORTFOLIO!!!!</p>
             </div>
         </div>
     </div>
 
-    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Welcome to my PORTFOLIO!!!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#">Certificates</a>
+                        <a class="nav-link" href="#">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="container px-4 bg-light">
+            <div class="row gx-5 m-4">
+                <div class="col p-3">
+                    <img src="photos/002.jpg" class="rounded-circle shadow-lg p-3 mb-5 bg-body" alt="my_image">
+                </div>
+                <div class="col p-3">
+                    <h2>Introduction...</h2>
+                    <p class="lead "><br>
+                        Hello everyone, I am a Btech 4th-year student who is a self-motivated, strategic, and
+                        hardworking
+                        student. I am a fast learner who is always excited to learn new things and to gain exposure to
+                        diverse cultures for developing new professional relationships and responsibilities. I have
+                        experience in front-end web development and have worked for some organizations such as ICAR-CIRC
+                        and
+                        have some experience in the field of IOT.
+                        I have good management skills with leadership quality
+                        My interest areas to explore are data science and web development.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
 </body>
 
 </html>
