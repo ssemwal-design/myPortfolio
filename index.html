@@ -18,7 +18,7 @@
         crossorigin="anonymous"></script>
 
 </head>
-
+<!-- loading page -->
 <script>
     var myVar;
 
@@ -44,10 +44,10 @@
         </div>
     </div>
 
-
+    <!-- navbar -->
     <div style="display:none;" id="myDiv" class="animate-bottom">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Welcome to my PORTFOLIO!!!</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,76 +57,91 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" aria-current="page" href="#aboutme">About me</a>
+                        <a class="nav-link" href="#Skillset">Skills</a>
                         <a class="nav-link" href="#">Certificates</a>
-                        <a class="nav-link" href="#">Resume</a>
+                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link"
+                            href="https://drive.google.com/file/d/1AT4RBmldu4dKCGW038lKYALWoi1Rg0Ps/view?usp=sharing">Resume</a>
+                        <a class="nav-link justify-content-end" href="#footer">Contact me >></a>
                     </div>
                 </div>
             </div>
         </nav>
 
 
-
-        <div class="container px-4 bg-light">
-            <div class="row gx-5 m-4">
-                <div class="col p-3">
-                    <img src="photos/002.jpg" class="rounded-circle shadow-lg p-3 mb-5 bg-body" alt="my_image">
+        <!-- about me -->
+        <Section class="section-aboutme bg-light ">
+            <div class="container px-4 " id="aboutme">
+                <div class="row gx-5 m-4">
+                    <div class="col p-3">
+                        <img src="photos/002.jpg" class="rounded-circle shadow-lg p-3 mb-5 bg-body" alt="my_image">
+                    </div>
+                    <div class="col p-3">
+                        <h2>Introduction...</h2>
+                        <p class="lead "><br>
+                            Hello everyone, I am a Btech 4th-year student who is a self-motivated, strategic, and
+                            hardworking
+                            student. I am a fast learner who is always excited to learn new things and to gain exposure
+                            to
+                            diverse cultures for developing new professional relationships and responsibilities. I have
+                            experience in front-end web development and have worked for some organizations such as
+                            ICAR-CIRC
+                            and
+                            have some experience in the field of IOT.
+                            I have good management skills with leadership quality
+                            My interest areas to explore are data science and web development.
+                        </p>
+                    </div>
                 </div>
-                <div class="col p-3">
-                    <h2>Introduction...</h2>
-                    <p class="lead "><br>
-                        Hello everyone, I am a Btech 4th-year student who is a self-motivated, strategic, and
-                        hardworking
-                        student. I am a fast learner who is always excited to learn new things and to gain exposure to
-                        diverse cultures for developing new professional relationships and responsibilities. I have
-                        experience in front-end web development and have worked for some organizations such as ICAR-CIRC
-                        and
-                        have some experience in the field of IOT.
-                        I have good management skills with leadership quality
-                        My interest areas to explore are data science and web development.
-                    </p>
+            </div>
+
+            <!-- qualifications -->
+            <div class="container-fluid">
+
+            </div>
+        </Section>
+
+        <!-- skillset container -->
+        <section class="section-skillset">
+            <div class="container " id="Skillset">
+                <div class="skill">
+                    <p class="secondary-heading">SKILLS</p>
+                    <p class="tertiary-heading">Current Skillset</p>
+                </div>
+                <div class="skill-grid grid grid-4-cols">
+                    <div class="skills" style="--bg: #DEBE1E">PYTHON</div>
+                    <div class="skills" style="--bg: #f06529">C/C++</div>
+                    <div class="skills" style="--bg: #a31e12">HTML</div>
+                    <div class="skills" style="--bg: #1483ba">CSS</div>
+                    <div class="skills el-1" style="--bg: #699351">BOOTSTRAP</div>
+                    <div class="skills el-2" style="--bg: #63245d">DJANGO</div>
+                    <div class="skills" style="--bg: #a31e12">ARDUINO</div>
+                    <div class="skills" style="--bg: #a31281">DATA STRUCTURES</div>
+                    <div class="skills el-3" style="--bg: #031b5c">ALGORITHMS</div>
+                    <div class="skills el-4" style="--bg: #1483ba">SQL</div>
+                    <div class="skills" style="--bg: #343a73">IOT</div>
+                    <div class="skills" style="--bg: #146116">PROJECT MANAGEMENT</div>
                 </div>
             </div>
-        </div>
-
-        <div class="container ">
-            <div class="skill">
-                <p class="secondary-heading">SKILLS</p>
-                <p class="tertiary-heading">Current Skillset</p>
-            </div>
-            <div class="skill-grid grid grid-4-cols">
-                <div class="skills" style="--bg: #DEBE1E">PYTHON</div>
-                <div class="skills" style="--bg: #f06529">C/C++</div>
-                <div class="skills" style="--bg: #a31e12">HTML</div>
-                <div class="skills" style="--bg: #1483ba">CSS</div>
-                <div class="skills el-1" style="--bg: #699351">BOOTSTRAP</div>
-                <div class="skills el-2" style="--bg: #63245d">DJANGO</div>
-                <div class="skills" style="--bg: #a31e12">ARDUINO</div>
-                <div class="skills" style="--bg: #a31281">DATA STRUCTURES</div>
-                <div class="skills el-3" style="--bg: #031b5c">ALGORITHMS</div>
-                <div class="skills el-4" style="--bg: #1483ba">SQL</div>
-                <div class="skills" style="--bg: #343a73">IOT</div>
-                <div class="skills" style="--bg: #146116">PROJECT MANAGEMENT</div>
-            </div>
-        </div>
-        <!-- <div class="container ">
-            <div class="skill-grid grid grid-4-cols">
-                <div class="skills" style="--bg: #DEBE1E">PYTHON</div>
-                <div class="skills" style="--bg: #f06529">C/C++</div>
-                <div class="skills" style="--bg: #a31e12">HTML</div>
-                <div class="skills" style="--bg: #1483ba">CSS</div>
-                <div class="skills el-1" style="--bg: #430e7d">DATA STRUCTURES</div>
-                <div class="skills el-2" style="--bg: #63245d">ALGORITHMS</div>
-                <div class="skills" style="--bg: #58e625">DJANGO</div>
-                <div class="skills" style="--bg: #a31281">ARDUINO</div>
-                <div class="skills el-3" style="--bg: #031b5c">IOT</div>
-                <div class="skills el-4" style="--bg: #e02312">SQL</div>
-                <div class="skills" style="--bg: #343a73">BOOTSTRAP</div>
-                <div class="skills" style="--bg: #146116"></div>
-            </div>
-        </div> -->
+        </section>
     </div>
+
+
+
+    <!-- accomplishments -->
+
+
+    <!-- footer -->
+    <section class="section-footer" >
+        <div class="container-fluid bg-dark " id="footer">
+            
+
+        </div>
+
+    </section>
+
+
 </body>
 
 </html>
