@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -34,13 +35,10 @@
 
 <body onload="myFunction()" style="margin:0;">
     <div id="loader">
-        <div class="d-flex justify-content-center">
-            <div>
-                <h1 style="color: white;">SHIVAM SEMWAL</h1>
-                <p>python developer | web developer</p>
-                <br><br>
-                <p>WELCOME TO MY PORTFOLIO!!!!</p>
-            </div>
+        <div class="loader-content">
+            <h1>SHIVAM SEMWAL</h1>
+            <p class="subtitle">Associate Software Engineer | Devops Enthusiast</p>
+            <p class="welcome">Welcome to my portfolio!</p>
         </div>
     </div>
 
@@ -56,14 +54,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav ms-auto">
                         <a class="nav-link" aria-current="page" href="#aboutme">About me</a>
                         <a class="nav-link" href="#Skillset">Skills</a>
                         <a class="nav-link" href="#">Certificates</a>
                         <a class="nav-link" href="#">Projects</a>
-                        <a class="nav-link"
-                            href="https://drive.google.com/file/d/1AT4RBmldu4dKCGW038lKYALWoi1Rg0Ps/view?usp=sharing">Resume</a>
-                        <a class="nav-link justify-content-end" href="#footer">Contact me >></a>
+                        <a class="nav-link" href="https://drive.google.com/file/d/1AT4RBmldu4dKCGW038lKYALWoi1Rg0Ps/view?usp=sharing">Resume</a>
+                        <div class="nav-right">
+                            <a class="nav-link" href="#footer">Contact me >></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,30 +70,34 @@
 
 
         <!-- about me -->
-        <Section class="section-aboutme bg-light ">
-            <div class="container px-4 " id="aboutme">
-                <div class="row gx-5 m-4">
-                    <div class="col p-3">
-                        <img src="photos/002.jpg" class="rounded-circle shadow-lg p-3 mb-5 bg-body" alt="my_image">
+
+            <section class="section-aboutme bg-light py-5" id="aboutme">
+                <div class="container px-4">
+                  <div class="row gx-5 align-items-center">
+                    
+                    <!-- Profile Image -->
+                    <div class="col-md-5 text-center mb-4 mb-md-0">
+                      <img src="photos/002.jpg" class="rounded-circle shadow-lg img-fluid profile-img" alt="my_image">
                     </div>
-                    <div class="col p-3">
-                        <h2>Introduction...</h2>
-                        <p class="lead "><br>
-                            Hello everyone, I am a Btech 4th-year student who is a self-motivated, strategic, and
-                            hardworking
-                            student. I am a fast learner who is always excited to learn new things and to gain exposure
-                            to
-                            diverse cultures for developing new professional relationships and responsibilities. I have
-                            experience in front-end web development and have worked for some organizations such as
-                            ICAR-CIRC
-                            and
-                            have some experience in the field of IOT.
-                            I have good management skills with leadership quality
-                            My interest areas to explore are data science and web development.
-                        </p>
+              
+                    <!-- Text Content -->
+                    <div class="col-md-7">
+                      <h2 class="mb-3 fw-bold">About Me</h2>
+                      <p class="lead">
+                        Hello! I'm Associate Software Engineer at ANR Software pvt LTD who is self-motivated, strategic, and driven. I thrive on learning fast, adapting quickly, and building meaningful professional relationships.
+                      </p>
+                      <p>
+                        I have hands-on experience in <strong>front-end web development</strong>, and I’ve collaborated with organizations like <strong>ICAR-CIRC</strong>. I also have a keen interest in the <strong>Internet of Things (IoT)</strong> and project-based learning.
+                      </p>
+                      <p>
+                        With strong management and leadership skills, I enjoy taking ownership and responsibility. I'm passionate about <strong>Data Science</strong> and <strong>Web Development</strong>, and constantly exploring both fields.
+                      </p>
                     </div>
+                    
+                  </div>
                 </div>
-            </div>
+              </section>
+
 
             <!-- qualifications -->
             <div class="container-fluid">
@@ -125,23 +128,25 @@
                 </div>
             </div>
         </section>
+
+        <!-- accomplishments -->
+
+
+        <!-- footer-->
+
+        <section class="section-footer">
+            <div class="container-fluid bg-dark text-center text-white py-4" id="footer">
+              <div class="social-icons mb-3">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+              </div>
+              <p class="footer-text mb-0">© 2025 Shivam Semwal | Built with 💻 and ☕</p>
+            </div>
+          </section>
+
     </div>
-
-
-
-    <!-- accomplishments -->
-
-
-    <!-- footer -->
-    <section class="section-footer" >
-        <div class="container-fluid bg-dark " id="footer">
-            
-
-        </div>
-
-    </section>
-
-
 </body>
 
 </html>
